@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://print.asu.edu/EmailSig/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>ASU Email signature generator</title>
+    <link rel="stylesheet" href="./sigfiles/global.css" media="screen" title="no title" charset="utf-8">
+    <link href="./sigfiles/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./sigfiles/font-awesome.min.css">
+    <script src="./sigfiles/clipboard.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body style="">
+    <div class="botFoot">
+        <div class="botContainer">
+          <p>
+            Designed and developed by the Print and Imaging Lab, modified by ASU EP.
+          </p>
+          <button class="maroon" onclick="updateAll()">Generate</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+      <div class="" style="float:right; padding:10px; background:#f4f4f4; margin-top:25px;">
+        <strong>Compatible Browsers</strong>
+        <br>
+        <br>
+        <ul>
+          <li>Safari version 10+</li>
+          <li>Google Chrome version 61+</li>
+          <li>Firefox version 55+</li>
+          <li>Microsoft Edge version 15+</li>
+        </ul>
+      </div>
+      <img width="200px" alt="ASU Logo" src="./sigfiles/full_logo.png">
+      <h1>ASU EP Email signature generator</h1>
+	  <!-- <p>
+	  Generate an Enterprise Marketing Hub-approved on-brand email signature. If you need assistance, please call 480-727-1636 or email print@asu.edu.
+	  </p> -->
+    </div>
+    <div class="container contentHolder">
+
+      <div class="autopop" style="display: none;">
+          <input style="max-width:40%; float:left;" type="text" id="autoPop" name="" placeholder="Auto-populate using your asurite">
+          <button style="float:left; margin-top:12px;" type="button" name="button" onclick="fillIt()">Submit</button>
+          <br class="clear">
+          <br>
+      </div>
+
+    <input type="hidden" id="mainDepartment" value="">
+
+      <div class="inputContainer">
+        <label for="name"> Name </label>
+        <input id="name" type="text" name="name" placeholder="Your name" value="">
+      </div>
+      <br class="clear">
+      <div class="inputContainer">
+        <label for="titleDept">Primary title</label>
+        <input id="titleDept" type="text" name="titleDept" placeholder="Your title" value="">
+      </div>
+      <br class="clear">
+      <div class="inputContainer">
+        <label for="Dept">Primary department</label>
+        <input id="Dept" type="text" name="Dept" placeholder="Your department" value="">
+      </div>
+      <br class="clear">
+      <div class="inputContainer">
+        <label for="Subsidiary">Subsidiary</label>
+        <!-- <input id="Dept" type="text" name="Dept" placeholder="Your department" value=""> -->
+        <select name="subsidiary" id="subsidiary">
+          <option value="asuep">ASU Enterprise Partners</option>
+          <option value="asuf">ASU Foundation</option>
+          <option value="asure">ASURE</option>
+          <option value="realty">University Realty</option>
+          <option value="ecasu">ECASU</option>
+          <option value="skysong">Skysong Innovations</option>
+        </select>
+      </div>
+
+
+      <br class="clear">
+
+      <button class="addTitles" onclick="generateSubTitle()"><i class="fa fa-plus" aria-hidden="true"></i> Add additional title</button>
+      <br class="clear">
+
+      <div id="subDeptHolder" class="ui-sortable">
+
+      </div>
+
+
+
+      <div class="inputContainer phone">
+        <label for="addLine1"> Address line 1 </label>
+        <input id="addLine1" type="text" name="addLine1" placeholder="Address line 1" value="">
+      </div>
+
+      <div class="inputContainer phone">
+        <label for="addLine2"> Address line 2 </label>
+        <input id="addLine2" type="text" name="addLine2" placeholder="Address line 2">
+      </div>
+
+      <div class="inputContainer phone">
+        <label for="addLine3"> Address line 3 </label>
+        <input id="addLine3" type="text" name="addLine3" placeholder="Address line 3">
+      </div>
+
+      <br class="clear">
+      <br class="clear">
+      <br>
+    <h2> Contact information </h2>
+      <p>
+        Phone, FAX and cell number fields only accept numbers.  These fields will automatically format to the ASU-approved phone number format.
+      </p>
+
+      <br>
+      <br>
+      <div class="inputContainer phone">
+        <label for="phone"> Phone # </label>
+        <input id="phone" type="text" name="phone" placeholder="Your phone #" min="0" value="">
+      </div>
+
+      <div class="inputContainer phone">
+        <label for="fax"> FAX # </label>
+        <input id="fax" type="text" name="fax" placeholder="Your FAX #" min="0">
+      </div>
+
+      <div class="inputContainer phone">
+        <label for="cell"> Cell # </label>
+        <input id="cell" type="text" name="cell" placeholder="Your cell #" min="0">
+      </div>
+
+      <div class="inputContainer">
+        <label for="email"> Email </label>
+        <input id="email" type="text" name="email" placeholder="Your email" value="">
+      </div>
+
+      <div class="inputContainer phone">
+        <label for="web"> Website </label>
+        <input id="web" type="text" name="web" placeholder="Your website">
+      </div>
+      <br class="clear">
+
+      <div class="inputContainer phone">
+        <label for="addLine11"> Secondary Address Line 1 </label>
+        <input id="addLine11" type="text" name="addLine11" placeholder="PO Box" value="">
+      </div>
+
+      <div class="inputContainer phone">
+        <label for="addLine22"> Secondary City, State </label>
+        <input id="addLine22" type="text" name="addLine22" placeholder="City, State">
+      </div>
+
+      <div class="inputContainer phone">
+        <label for="addLine33"> Secondary Zip Code </label>
+        <input id="addLine33" type="text" name="addLine33" placeholder="Zip Code">
+      </div>
+
+
+
+      <br class="clear">
+
+
+
+
+      <br class="clear">
+      <br>
+      <!-- <h2> Custom statements </h2>
+      <p>
+        <strong>"Add additional statement to current line"</strong> adds a new statement where you provide the entire statement, the text inside of the statement you want to be linked, and the link URL.
+      </p>
+      <p>
+        <strong>"Add new line"</strong> adds a new line to the signature.  Multiple statements can be on one line, and the order of statements and lines can be adjusted by  dragging and dropping.
+      </p>
+      <br>
+      <button onclick="createSubCat()"><i class="fa fa-object-group" aria-hidden="true"></i> Add new line</button>
+      <button onclick="createLinks()"><i class="fa fa-plus" aria-hidden="true"></i> Add additional statement to current line</button> -->
+      <br>
+      <br class="clear">
+
+      <br>
+      <div id="subLinkHolder" class="ui-sortable">
+
+      </div>
+      <br>
+
+
+      <h2> Social media </h2>
+      <br>
+      <button onclick="createSocialMedia()"><i class="fa fa-share-square" aria-hidden="true"></i> Add new social media</button>
+      <br class="clear">
+      <div id="socialMediaHolder" class="ui-sortable">
+
+      </div>
+      <br class="clear">
+
+      <h2>Choose your footer</h2>
+      <!-- <div class="topBottomLabel">
+        #1 in innovation
+      </div> -->
+      <div class="topBottom2020Label">
+        Campaign ASU 2020
+      </div>
+      <div class="topBottomBlankLabel">
+        Blank
+      </div>
+      <br class="clear">
+      <!-- <div class="bottomSelection inno active" data-which="inno">
+
+      </div> -->
+      <div class="bottomSelection camp20" data-which="camp">
+
+      </div>
+      <div class="bottomSelection blank" data-which="blank">
+
+      </div>
+      <br class="clear">
+      <br>
+      <br>
+      <br class="clear">
+      <br>
+      <br>
+      <br class="clear">
+
+    </div>
+
+        <br class="clear">
+
+<!--
+    Preview Stuff
+-->
+  <div id="loader">
+    <img class="theStyles" src="./sigfiles/2.gif">
+  </div>
+  <div id="mask">
+    <div class="thePreview">
+      <h2>Your signature <span onclick="hidePreview()" class="hidePreview"><i class="fa fa-times-circle"></i> </span></h2>
+      <section class="example" id="example">
+        <table cellpadding="0" cellspacing="0" style="padding-right:8px; font-size:10pt; font-weight:normal; padding-left:8px; line-height:16px; font-family:Arial,Sans Serif; color:#000000">
+      		<tbody><tr>
+            <td>
+      		  	<span id="preName" style="color:#000000; font-weight: bold; font-size:10pt"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+             <span style="color:#000; font-size:8pt;" id="preTitleDept"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+             <span style="color:#000; font-size:8pt;" id="preDept"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+             <span style="color:#000; font-size:8pt;" id="preSubsidiary"></span>
+            </td>
+          </tr>
+          </tbody>
+          <tbody class="tableHolder">
+          </tbody>
+          <!-- <tbody><tr>
+            <td>
+             <span style="color:#000; font-weight: bold; font-size:8pt" id="preSchool"></span>
+            </td>
+          </tr>
+          </tbody> -->
+
+          <tbody id="address"></tbody>
+          <tbody><tr height="30">
+            <td>
+             <span style="color:#000; font-size:8pt" id="prePhone"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+             <span style="color:#000; font-size:8pt" id="preEmail"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+             <span style="color:#000; font-size:8pt" id="preWeb"></span>
+            </td>
+          </tr>
+          <tbody id="addressPO">
+
+          </tbody>
+          </tbody><tbody class="hyperlinkHolder">
+          </tbody>
+          <tbody class="socialMediaHolder">
+
+          </tbody>
+          <tbody class="bottomHolder">
+          </tbody>
+          </table>
+      </section>
+
+      <button id="button" type="button" onclick="doData()" data-clipboard-target="#example" name="button"><i class="fa fa-clipboard" aria-hidden="true"></i> Copy your signature</button>
+            <br class="clear">
+      <div class="youneedthis">
+
+      </div>
+    </div>
+</div>
+    <script src="./sigfiles/jquery-1.10.2.js"></script>
+    <script src="./sigfiles/jquery-ui.js"></script>
+    <script src="./sigfiles/jquery.form.js"></script>
+    <script src="./sigfiles/custom.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.bottomSelection').on('click', function() {
+          $('.bottomSelection.active').removeClass('active');
+          $(this).addClass('active');
+        });
+        phoneFormatter();
+      });
+      new Clipboard('#button');
+
+
+      $("#subLinkHolder").sortable({
+        distance: 10
+      });
+
+      $("#subDeptHolder").sortable({
+        distance: 10
+      });
+
+      $("#socialMediaHolder").sortable({
+        distance: 10
+      });
+    </script>
+
+
+
+</body></html>
