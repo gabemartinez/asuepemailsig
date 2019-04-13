@@ -2,7 +2,7 @@
 <!-- saved from url=(0031)https://print.asu.edu/EmailSig/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>ASU Email signature generator</title>
+    <title>ASU EP Email signature generator</title>
     <link rel="stylesheet" href="./sigfiles/global.css" media="screen" title="no title" charset="utf-8">
     <link href="./sigfiles/ourstyles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./sigfiles/font-awesome.min.css">
@@ -32,8 +32,9 @@
           <li>Microsoft Edge version 15+</li>
         </ul>
       </div> -->
-      <img width="200px" alt="ASU Logo" src="./sigfiles/full_logo.png">
-      <h1>ASU EP Email signature generator</h1>
+      <img width="200px" alt="ASU Logo" src="./sigfiles/asu_enterpartners_horiz_rgb_maroongold_150ppi_0.png">
+      <h1><span style="background-color: #ffc627; padding: 4px;">ASU EP Email Signature Generator</span></h1>
+      <p><em>Fill in the form and then click the generate button.</em></p>
 	  <!-- <p>
 	  Generate an Enterprise Marketing Hub-approved on-brand email signature. If you need assistance, please call 480-727-1636 or email print@asu.edu.
 	  </p> -->
@@ -80,7 +81,7 @@
 
       <br class="clear">
 
-      <button class="addTitles" onclick="generateSubTitle()"><i class="fa fa-plus" aria-hidden="true"></i> Add additional title</button>
+      <button class="addTitles" onclick="generateSubTitle()" style="margin: 0 0 0 0 !important;"><i class="fa fa-plus" aria-hidden="true"></i> Add additional title</button>
       <br class="clear">
 
       <div id="subDeptHolder" class="ui-sortable">
@@ -88,7 +89,7 @@
       </div>
 
 
-
+      <h2 style="padding-top: 20px;"><span style="background-color: #ffc627; padding: 4px;">Contact information</span></h2>
       <div class="inputContainer phone">
         <label for="addLine1"> Address line 1 </label>
         <input id="addLine1" type="text" name="addLine1" placeholder="Address line 1" value="">
@@ -105,15 +106,14 @@
       </div>
 
       <br class="clear">
-      <br class="clear">
-      <br>
-    <h2> Contact information </h2>
+      <!-- <br class="clear">
+      <br> -->
       <p>
-        Phone, FAX and cell number fields only accept numbers.  These fields will automatically format to the ASU-approved phone number format.
+        <em>Phone, FAX and Cell number fields only accept numbers.  These fields will automatically format to the ASU-approved phone number format.</em>
       </p>
 
-      <br>
-      <br>
+      <!-- <br>
+      <br> -->
       <div class="inputContainer phone">
         <label for="phone"> Phone # </label>
         <input id="phone" type="text" name="phone" placeholder="Your phone #" min="0" value="">
@@ -130,9 +130,10 @@
       </div>
 
       <div class="inputContainer">
-        <label for="email"> Email </label>
+        <label for="email"> Email Address </label>
         <input id="email" type="text" name="email" placeholder="Your email" value="">
       </div>
+      <br class="clear">
 
       <div class="inputContainer phone">
         <label for="web"> Website </label>
@@ -155,15 +156,10 @@
         <input id="addLine33" type="text" name="addLine33" placeholder="Zip Code">
       </div>
 
-
-
       <br class="clear">
 
-
-
-
-      <br class="clear">
-      <br>
+      <!-- <br class="clear">
+      <br> -->
       <!-- <h2> Custom statements </h2>
       <p>
         <strong>"Add additional statement to current line"</strong> adds a new statement where you provide the entire statement, the text inside of the statement you want to be linked, and the link URL.
@@ -174,26 +170,27 @@
       <br>
       <button onclick="createSubCat()"><i class="fa fa-object-group" aria-hidden="true"></i> Add new line</button>
       <button onclick="createLinks()"><i class="fa fa-plus" aria-hidden="true"></i> Add additional statement to current line</button> -->
-      <br>
-      <br class="clear">
+      <!-- <br>
+      <br class="clear"> -->
 
+      <!--
       <br>
       <div id="subLinkHolder" class="ui-sortable">
 
       </div>
-      <br>
+      <br> -->
 
 
-      <h2> Social media </h2>
+      <h2 style="padding-top: 20px;"><span style="background-color: #ffc627; padding: 4px;">Social media</span></h2>
       <br>
-      <button onclick="createSocialMedia()"><i class="fa fa-share-square" aria-hidden="true"></i> Add new social media</button>
+      <button onclick="createSocialMedia()" style="margin: 0 0 0 0 !important;"><i class="fa fa-share-square" aria-hidden="true"></i> Add new social media</button>
       <br class="clear">
       <div id="socialMediaHolder" class="ui-sortable">
 
       </div>
       <br class="clear">
 
-      <h2>Choose your footer</h2>
+      <h2 style="padding-top: 20px;"><span style="background-color: #ffc627; padding: 4px;">Choose your footer</span></h2>
       <!-- <div class="topBottomLabel">
         #1 in innovation
       </div> -->
@@ -233,7 +230,7 @@
   </div>
   <div id="mask">
     <div class="thePreview">
-      <h2>Your signature <span onclick="hidePreview()" class="hidePreview"><i class="fa fa-times-circle"></i> </span></h2>
+      <h2 style="padding-bottom: 20px"><span style="background-color: #ffc627; padding: 4px;">Your signature</span> <span onclick="hidePreview()" class="hidePreview"><i class="fa fa-times-circle"></i> </span></h2>
       <section class="example" id="example">
         <table cellpadding="0" cellspacing="0" style="padding-right:8px; font-size:10pt; font-weight:normal; padding-left:8px; line-height:16px; font-family:Arial,Sans Serif; color:#000000">
       		<tbody><tr>
@@ -297,7 +294,7 @@
 
       <button id="button" type="button" onclick="doData()" data-clipboard-target="#example" name="button"><i class="fa fa-clipboard" aria-hidden="true"></i> Copy your signature</button>
             <br class="clear">
-      <div class="youneedthis">
+      <div class="youneedthis" style="display: none">
 
       </div>
     </div>

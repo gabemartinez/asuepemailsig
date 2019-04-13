@@ -429,7 +429,7 @@ td {
   height:70px;
   float:left;
   box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
-  margin-left:30px;
+  /* margin-left:30px; */
 }
 .bottomSelection.blank {
   background:#fff;

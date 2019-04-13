@@ -268,7 +268,7 @@ function destroyElm2(elm) {
    if($('#addLine1').val() != '') {
    var val = '<tr>' +
        '<td>'+
-        '<span style="color:#000; font-size:8pt; font-weight:bold;">'+$('#addLine1').val()+$('#addLine2').val()+$('#addLine3').val()+'</span>'+
+        '<span style="color:#000; font-size:8pt; font-weight:bold;">'+$('#addLine1').val()+' '+$('#addLine2').val()+' '+$('#addLine3').val()+'</span>'+
        '</td>'+
     '</tr>';
     $('#address').append(val);
@@ -281,7 +281,7 @@ function destroyElm2(elm) {
    if($('#addLine11').val() != '') {
    var val = '<tr>' +
        '<td>'+
-        '<span style="color:#000; font-size:8pt; font-weight:bold;">'+$('#addLine11').val()+$('#addLine22').val()+$('#addLine33').val()+'</span>'+
+        '<span style="color:#000; font-size:8pt; font-weight:bold;">'+$('#addLine11').val()+' '+$('#addLine22').val()+' '+$('#addLine33').val()+'</span>'+
        '</td>'+
     '</tr>';
     $('#addressPO').append(val);
