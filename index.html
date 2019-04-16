@@ -51,22 +51,33 @@
     <input type="hidden" id="mainDepartment" value="">
 
       <div class="inputContainer">
-        <label for="name"> Name </label>
+        <label for="name"> Name (First and Last)</label>
         <input id="name" type="text" name="name" placeholder="Your name" value="">
       </div>
       <br class="clear">
+
       <div class="inputContainer">
-        <label for="titleDept">Primary title</label>
+        <label for="titleDept">Title</label>
         <input id="titleDept" type="text" name="titleDept" placeholder="Your title" value="">
       </div>
       <br class="clear">
+
+      <button class="addTitles" onclick="generateSubTitle()" style="margin: 0 0 0 0 !important;"><i class="fa fa-plus" aria-hidden="true"></i> Add additional title</button>
+      <br class="clear">
+
+      <div id="subDeptHolder" class="ui-sortable">
+
+      </div>
+      <br class="clear">
+
       <div class="inputContainer">
-        <label for="Dept">Primary department</label>
+        <label for="Dept">Department</label>
         <input id="Dept" type="text" name="Dept" placeholder="Your department" value="">
       </div>
       <br class="clear">
+
       <div class="inputContainer">
-        <label for="Subsidiary">Subsidiary</label>
+        <label for="Subsidiary">Organization</label>
         <!-- <input id="Dept" type="text" name="Dept" placeholder="Your department" value=""> -->
         <select name="subsidiary" id="subsidiary">
           <option value="asuep">ASU Enterprise Partners</option>
@@ -77,39 +88,32 @@
           <option value="realty">University Realty</option>
         </select>
       </div>
-
-
       <br class="clear">
-
-      <button class="addTitles" onclick="generateSubTitle()" style="margin: 0 0 0 0 !important;"><i class="fa fa-plus" aria-hidden="true"></i> Add additional title</button>
-      <br class="clear">
-
-      <div id="subDeptHolder" class="ui-sortable">
-
-      </div>
-
 
       <h2 style="padding-top: 20px;"><span style="background-color: #ffc627; padding: 4px;">Contact information</span></h2>
       <div class="inputContainer phone">
         <label for="addLine1"> Address line 1 </label>
         <input id="addLine1" type="text" name="addLine1" placeholder="Address line 1" value="">
       </div>
+      <br class="clear">
 
       <div class="inputContainer phone">
         <label for="addLine2"> Address line 2 </label>
         <input id="addLine2" type="text" name="addLine2" placeholder="Address line 2">
       </div>
+      <br class="clear">
 
       <div class="inputContainer phone">
         <label for="addLine3"> Address line 3 </label>
         <input id="addLine3" type="text" name="addLine3" placeholder="Address line 3">
       </div>
-
       <br class="clear">
+      <br class="clear">
+
       <!-- <br class="clear">
       <br> -->
       <p>
-        <em>Phone, FAX and Cell number fields only accept numbers.  These fields will automatically format to the ASU-approved phone number format.</em>
+        <em>Phone, FAX and Cell number fields only accept numbers.</em>
       </p>
 
       <!-- <br>
@@ -118,18 +122,22 @@
         <label for="phone"> Phone # </label>
         <input id="phone" type="text" name="phone" placeholder="Your phone #" min="0" value="">
       </div>
+      <br class="clear">
 
       <div class="inputContainer phone">
         <label for="fax"> FAX # </label>
         <input id="fax" type="text" name="fax" placeholder="Your FAX #" min="0">
       </div>
+      <br class="clear">
 
       <div class="inputContainer phone">
         <label for="cell"> Cell # </label>
         <input id="cell" type="text" name="cell" placeholder="Your cell #" min="0">
       </div>
+      <br class="clear">
+      <br class="clear">
 
-      <div class="inputContainer">
+      <div class="inputContainer phone">
         <label for="email"> Email Address </label>
         <input id="email" type="text" name="email" placeholder="Your email" value="">
       </div>
@@ -140,22 +148,24 @@
         <input id="web" type="text" name="web" placeholder="Your website">
       </div>
       <br class="clear">
+      <br class="clear">
 
       <div class="inputContainer phone">
         <label for="addLine11"> Secondary Address Line 1 </label>
         <input id="addLine11" type="text" name="addLine11" placeholder="PO Box" value="">
       </div>
+      <br class="clear">
 
       <div class="inputContainer phone">
         <label for="addLine22"> Secondary City, State </label>
         <input id="addLine22" type="text" name="addLine22" placeholder="City, State">
       </div>
+      <br class="clear">
 
       <div class="inputContainer phone">
         <label for="addLine33"> Secondary Zip Code </label>
         <input id="addLine33" type="text" name="addLine33" placeholder="Zip Code">
       </div>
-
       <br class="clear">
 
       <!-- <br class="clear">
