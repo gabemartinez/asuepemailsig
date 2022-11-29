@@ -71,7 +71,7 @@ label.labelTitle {
   font-size:23px;
   font-weight:bold;
 }
-input, select {
+input, select, textarea {
     width: 80%;
     background-color: #fff;
     background-image: none;
@@ -81,6 +81,7 @@ input, select {
     color: #505050;
     display: block;
     font-size: 16px;
+    font-family: arial, sans-serif;
     margin: 10px 0;
     font-weight: 200;
     height: 25px;
@@ -297,7 +298,7 @@ button {
     font-weight: bold;
 }
 button:hover, input#sub:hover {
-    background: ##768492;
+    background: #768492;
 }
 .moreSpacing {
     margin-bottom:50px;
